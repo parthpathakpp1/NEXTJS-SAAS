@@ -76,6 +76,7 @@ export const Pricing = () => {
               inverse,
               features,
             }) => (
+              // eslint-disable-next-line react/jsx-key
               <div
                 className={twMerge(
                   "card",
@@ -128,6 +129,7 @@ export const Pricing = () => {
                 </button>
                 <ul className="flex flex-col gap-5 mt-8">
                   {features.map((feature) => (
+                    // eslint-disable-next-line react/jsx-key
                     <li className="text-sm flex items-center gap-4">
                       <CheckIcon className="h-6 w-6" />
                       <span>{feature}</span>
